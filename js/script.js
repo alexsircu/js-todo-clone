@@ -11,8 +11,12 @@ $(document).ready(
         var context = {
           list : userText
         };
+
         var html = template(context);
-        $(".test").append(html);
+        
+        if (userText !== "") {
+          $(".test").append(html);
+        }
       }
     });
 
